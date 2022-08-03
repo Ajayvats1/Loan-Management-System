@@ -1,0 +1,92 @@
+
+body
+{
+Font-Family:Aparajita;
+background-Color:white;
+color:black;
+height:1000px;
+width:100%;
+}
+
+#divcontent
+ {
+    background-color:cornsilk;
+}
+
+#divbank {
+    background-color: white;
+}
+
+
+#divbanner
+{
+height:242px;
+width:99%;
+background-color:white;
+
+}
+#divbannerUser
+{
+height:195px;
+width:99%;
+background-color:white;
+
+}
+#Query {
+    background-color:firebrick;
+}
+
+
+#disc
+ {
+    
+    background-image: url("../Images/icici1.png");
+     font-family:'Century Schoolbook';
+    font-size:larger;
+    background-color:cornsilk;
+    color:black;
+
+}
+#divLogin {
+background-color:lightsalmon;
+}
+
+
+
+.divpre
+ {
+    font-family:'Century Schoolbook';
+    font-size:medium;
+    background-color:cornsilk;
+    color:black;
+}
+
+
+#divmenu 
+{
+    background-color:cyan;
+}
+
+#registercontent {
+    background-color:burlywood;
+}
+
+#Status {
+     /*background-image: url("../Images/StatusBack.jpg");*/
+   
+    background:url(../Images/StatusBack.jpg) no-repeat left left;
+     background-color:lemonchiffon;
+}
+
+#divUpdateForm {
+    width: 60%;
+    background-color:linen;
+    float:left;
+    margin-right: 0px;
+}
+#divUpdateLink {
+    float: right;
+    background-color: honeydew;
+    width: 40%;
+    height: 223px;
+}

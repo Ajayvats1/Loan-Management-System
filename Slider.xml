@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Advertisements>
+  <Ad >
+    <ImageUrl>images/Front1.jpg</ImageUrl>
+    </Ad>
+ <Ad>
+    <ImageUrl>images/Front2.jpg</ImageUrl>
+    </Ad>
+ <Ad>
+    <ImageUrl>images/Front4.jpg</ImageUrl>
+    </Ad>
+ <Ad>
+    <ImageUrl>images/Front5.jpg</ImageUrl>
+    </Ad>
+ <Ad>
+    <ImageUrl>images/Front6.jpg</ImageUrl>
+    </Ad>
+
+  </Advertisements>
+ 

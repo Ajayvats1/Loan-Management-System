@@ -1,0 +1,254 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css\b1.css" rel="stylesheet" type="text/css"/>
+    <link href="css/b1.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .newStyle1 {
+            background-image: url('/Images/b1.png');
+        }
+        .newStyle2 {
+            background-color:white;
+        }
+        .auto-style1 {
+            clear: left;
+            float: left;
+            width: 170px;
+            font: normal normal bold 20pt normal arial;
+            color: #FFBE11;
+            margin: 54px 0px 15px 0px;
+            text-decoration: none;
+        }
+        .auto-style2 {
+            font-size: 21pt;
+        }
+        </style>
+</head>
+<body >
+    
+    <form id="form1" runat="server">
+        <%-- <form id="form1" runat="server">
+      <div id="divbanner" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style1" style="color: #33CC33"><span class="auto-style3"><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<asp:Image ID="Image1" runat="server" DescriptionUrl="~/car.aspx" ForeColor="Black" Height="172px" ImageUrl="~/Images/lm.png" Width="374px" />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="auto-style6">&nbsp;</span><span class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Names="Britannic Bold" Font-Overline="False" Font-Size="55pt" ForeColor="#CC3300" Text="Online Loan Management System"></asp:Label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </span><span class="auto-style7"><a href="http://www.loanmarket.in">www.loanmarket.</a>com<br />
+          <br />
+          <asp:Menu ID="MenuActivity" runat="server" BackColor="Black" BorderStyle="Ridge" Font-Size="Large" ForeColor="White" ItemWrap="True" Orientation="Horizontal">
+              <Items>
+                  <asp:MenuItem NavigateUrl="~/basic.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/Bank/BankRegister.aspx" Text="Bank Register    " Value="Bank Register"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/User/Registration.aspx" Text="    User Register    " Value="User Register"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/Login.aspx" Text="    Login    " Value="Login"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/Query.aspx" Text="Query"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/User/StatusForm.aspx" Text="Status" Value="Status"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/ContactUs.aspx" Text="ContactUs" Value="ContactUs"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/AboutUs.aspx" Text="About Us" Value="About Us"></asp:MenuItem>
+                  <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Apply for Loan" Value="Apply for Loan"></asp:MenuItem>
+              </Items>
+          </asp:Menu>
+          <br />
+          <br />
+          <br />
+          </span><br />
+          <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&nbsp; </strong>
+          </span><span class="auto-style1" style="color: #33CC33"><span class="auto-style5"> <span class="auto-style2"><strong>&nbsp;</strong></span></span><span class="auto-style4"><br style="background-color: #009933" />
+          </span>
+          <br />
+             
+
+          <br />
+          </span>
+
+      </div>
+    <div id="divmenu" >
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+      
+        <asp:Menu ID="Menu1" runat="server" OnMenuItemClick="Menu1_MenuItemClick" Width="45px" Font-Size="XX-Large" Height="250px" RenderingMode="Table" Font-Names="Baskerville Old Face">
+            <DynamicMenuStyle VerticalPadding="7px" />
+            <Items>
+                <asp:MenuItem Text="Personal Loan" Value="Personal Loan" NavigateUrl="~/Loans/Personal.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Home Loan" Value="Home Loan" NavigateUrl="~/Loans/Home.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Vehical Loan" Value="Car Loan" NavigateUrl="~/Loans/Vehical.aspx">
+                    <asp:MenuItem Text="Used Car" Value="Used Car" NavigateUrl="~/oldcar.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="New Car" Value="New Car" NavigateUrl="~/car.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Education Loan" Value="Education Loan" NavigateUrl="~/Loans/Educational.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Loan on Securities" Value="Loan on Securities"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Loans/Business.aspx" Text="Business Loan" Value="Business Loan"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div id="divcontent">
+        
+    </div>
+            </asp:ContentPlaceHolder>
+        <div style="font-family:Arial;
+              background-color:black;
+              color:white;
+              font-size:15px">
+            <footer>
+                <br />
+         © loanmarket.com all rights reserved.<br />
+                <br />
+              </footer>
+            </div>
+    
+    </form>--%>
+    <!--main block starts here -->
+<div id="mainblock">
+  <!--inner block starts here -->
+  <div id="innerblock">
+    <!--top block starts here -->
+    <div class="topblock">
+      <div class="tp_bg1"> <a href="basic.aspx" class="tp_hme">Home Page</a>
+           <a href="../User/Registration.aspx" class="tp_hme1">User Registration</a> 
+          <a href="../Bank/BankRegister.aspx" class="tp_hme2">Bank Registration</a>
+           <a href="../Login.aspx" class="tp_hme2">Login</a>
+          <a href="../User/ApplyForLoan.aspx" class="tp_hme2">Apply For Loan</a>
+          <a href="../AboutUs.aspx" class="tp_hme1">About Us</a>
+           <a href="../ContactUs.aspx" class="tp_hme2">Contact Us</a>
+          <a href="../User/Query.aspx" class="tp_hme1">Query</a>
+          <a href="../User/StatusForm.aspx" class="tp_hme2">Check Status</a> 
+          
+      </div>
+      <div class="tp_bg2"> <a href="#" class="tp_logo">&nbsp; 
+          <asp:Label ID="Label1" runat="server" Text="Online Loan Management System" Font-Size="40pt" ForeColor="#FF9900"></asp:Label>
+          </a>&nbsp;&nbsp;<span class="logo_txt"><span style="color:#C5CCE4; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; font-family: arial;" class="auto-style2">Welcome<br />
+          </span><br />
+        This site is usefull to provide Loan Details.</span>  </div>
+      <div class="tp_bg3"> <span class="tp_online"><b>Online</b> Support Chat<br />
+        <br />
+        <a href="../ContactUs.aspx" style="color:#50504F;">Click Here&nbsp;&raquo;</a></span> </div>
+     <div class="center_panel"> <img src="images/cp_top.jpg" width="980" height="5" alt="" class="cp_top" />
+        <div class="cen_1px">
+          <p style=" display:inline; clear:left; float:left; width:599px;">      <p style=" display:inline; clear:left; float:left; width:599px;"> 
+              <img src="images/succ_img.jpg" width="158" height="134" alt="" class="succ_img" /> <span style="float:left; width:380px;">
+               <span class="cp_teach">&#8220;<span style="font:24px Century Gothic; color:#FFBE11;">Online Loan Management System</span></span>
+               <span class="teach_txt"> is a site that provide different type of Loans.
+                   <br />
+            <b>Every bank has a different rate of interest for different loans. Rate of interest is fixed according to 
+            condition provided by the banks.</b><br />
+            <br />
+            </span> </span>  </p>
+          <p style=" display:inline; float:left; width:381px;">  
+               <asp:ScriptManager ID="ScriptManager2" runat="server">  </asp:ScriptManager>
+       <div >
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
+                <ContentTemplate>
+                    <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/Slider.xml" />
+                    <asp:Timer ID="Timer2" runat="server" Interval="2500"></asp:Timer>
+                    </ContentTemplate>
+            </asp:UpdatePanel>
+       </div>
+
+            <br />
+            </p>
+        </div>
+    </div>
+    <!--top block ends here -->
+    <!--content panel starts here -->
+    <div class="cp_div">
+      <!--left panel starts here -->
+      <div class="lp_div">
+        <p style=" display:inline; clear:left; float:left; width:209px; margin-left:44px; height: 355px;"> <span class="auto-style1">Loan Types</span> <img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /><span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnPersonal" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Personal.aspx">Personal Loan</asp:LinkButton>
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Home.aspx">Home Loan</asp:LinkButton>
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /><span class="feat_txt">
+                <asp:LinkButton ID="LinkBtn" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Vehical.aspx">Vehical Loan</asp:LinkButton>
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnBusiness" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Business.aspx">Business Loan</asp:LinkButton>
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnEducation" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Educational.aspx">Educational Loan</asp:LinkButton>
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnSecurities" runat="server" Font-Size="Large" PostBackUrl="~/Loans/LoanOnSecurities.aspx">Loan On Securities</asp:LinkButton>
+            </span>&nbsp;
+            &nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnGoldLoan" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Gold.aspx">Gold Loan</asp:LinkButton>
+            </span>&nbsp;
+           </p>
+        <%--<p style=" display:inline; float:left; width:415px;"> 
+           
+            <br />
+            <br />
+          &nbsp;<br />
+          &nbsp;</p>--%>
+      </div>
+      <!--left panel ends here -->
+        <div class="center_div">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+               
+
+                  
+                 
+
+                    
+              
+                  
+                 
+
+                    
+            </asp:ContentPlaceHolder>
+            </div>
+      <!--right panel starts here -->
+      <%--<div class="rp_div"> <span class="lp_feat"> &nbsp; &nbsp;Our Partners</span>&nbsp;&nbsp <img src="images/part_arw.jpg" width="8" height="9" alt=""  class="part_arw"/> <span class="part_txt"><b>Sed temsmod purus.</b><br />
+        <br />
+        Suspendisse laoreet ipsum rhoncus sem. Maecenas ultricies. Nulla eleifend massa vel ipsum lobortis convallis. </span><br />
+        &nbsp;&nbsp;&nbsp;&nbsp;<img src="images/part_img.jpg" width="196" height="89" alt="" class="part_img" /> &nbsp;&nbsp;<img src="images/part_arw.jpg" width="8" height="9" alt=""  class="part_arw"/> <span class="part_txt"><b>Sed temsmod purus.</b><br />
+        <br />
+        Suspendisse laoreet ipsum rhoncus sem. Maecenas ultricies. Nulla eleifend massa vel ipsum lobortis convallis.<br />
+        <br />
+        Estibulum non dolor eget nibh consectetur cursus. </span><br />
+        <a href="#" class="feat_more"><b> &nbsp; &nbsp;More Info&nbsp;+</b></a> </div>--%>
+      <!--right panel ends here -->
+    </div>
+    <!--content panel ends here -->
+    <!--footer panel starts here -->
+    <div class="ft_bg"> <a href="basic.aspx" class="ft_home">Home Page</a> 
+        <img src="images/ft_bar.jpg"  width="1" height="11" alt="" class="ft_bar" />
+         <a href="AboutUs.aspx" class="ft_spl">About Us</a> 
+        <img src="images/ft_bar.jpg"  width="1" height="11" alt="" class="ft_bar" />
+         <a href="ContactUs.aspx" class="ft_dom">Contact Us</a> 
+        </div>
+    <br />
+    <br />
+    <!--footer panel ends here -->
+  </div>
+  <!--inner block ends here -->
+</div>
+<!--main block ends here -->
+      <%--  <asp:ScriptManager ID="ScriptManager1" runat="server">  </asp:ScriptManager>
+       <div>
+            <asp:UpdatePanel runat="server">
+                <ContentTemplate>
+                    <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/Slider.xml" />
+                    <asp:Timer ID="Timer1" runat="server" Interval="2500"></asp:Timer>
+                    </ContentTemplate>
+            </asp:UpdatePanel>
+       </div>
+      --%>
+
+    </form>
+
+</body>
+</html>

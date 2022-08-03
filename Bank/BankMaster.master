@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BankMaster.master.cs" Inherits="Bank_BankMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <style type="text/css">
+        .auto-style2 {
+            display: inline;
+            clear: left;
+            float: left;
+            width: 209px;
+            height: 34px;
+            font-size: 16pt;
+            font-family: "Imprint MT Shadow";
+            color: #FF9900;
+            margin-left: 44px;
+        }
+    </style>
+</head>
+<body>
+     <form id="form1" runat="server">
+       
+       <div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><span class="icon icon-cog"></span><a href="#">Bank</a></h1>
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="../basic.aspx" accesskey="1" title="">Homepage</a></li>
+					<li><a href="ManageLoanDetails.aspx" accesskey="2" title="">Manage Loan Details</a>
+
+					</li>
+                    <li><a href="ManageStatus.aspx" accesskey="2" title="">Manage Status</a>
+                    
+					</li>
+				</ul>
+
+			</div>
+		</div>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:LinkButton ID="LinkBtnLogout" runat="server" Font-Bold="True" Font-Names="aprajita" Font-Size="X-Large" ForeColor="Black" OnClick="LinkBtnLogout_Click" Visible="False">Logout</asp:LinkButton>
+	</div>
+</div>
+        <div class="AdminContent">
+   &nbsp;<div class="DivContent">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       </div>
+            <div class="DivMenu">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <p class="auto-style2"> <strong>Loan Types</strong></p>
+                <p style=" display:inline; clear:left; float:left; width:209px; margin-left:44px; height: 355px;"> &nbsp;
+                    <img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /><span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnPersonal" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Personal.aspx">Personal Loan</asp:LinkButton><br />
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkButton1" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Home.aspx">Home Loan</asp:LinkButton><br />
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /><span class="feat_txt">
+                <asp:LinkButton ID="LinkBtn" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Vehical.aspx">Vehical Loan</asp:LinkButton><br />
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnBusiness" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Business.aspx">Business Loan</asp:LinkButton><br />
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnEducation" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Educational.aspx">Educational Loan</asp:LinkButton><br />
+            </span>&nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnSecurities" runat="server" Font-Size="Large" PostBackUrl="~/Loans/LoanOnSecurities.aspx">Loan On Securities</asp:LinkButton><br />
+            </span>&nbsp;
+            &nbsp;<img src="images/feat_arw.jpg" width="6" height="7" alt="" class="feat_arw" /> <span class="feat_txt">
+            <asp:LinkButton ID="LinkBtnGoldLoan" runat="server" Font-Size="Large" PostBackUrl="~/Loans/Gold.aspx">Gold Loan</asp:LinkButton>
+            </span>&nbsp;
+           </p>
+      <br />
+                <br />
+                <br />
+                <br />
+&nbsp;&nbsp;
+                <br />
+                </div>
+            <div class="GridView">
+
+                </div>
+    </div>
+    </form>
+</body>
+</html>
