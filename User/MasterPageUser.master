@@ -1,0 +1,251 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageUser.master.cs" Inherits="User_MasterPageUser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <%--    <style type="text/css">
+
+        .auto-style1 {
+            font-family: arial;
+            font-size: x-large;
+        }
+        .auto-style7 {
+            font-family: "Bell MT";
+            font-size: medium;
+            color: #0000FF;
+        }
+        .auto-style8 {
+            width: 100%;
+            height: 475px;
+            margin-bottom: 0px;
+        }
+        .auto-style10 {
+            height: 256px;
+            text-align: center;
+            font-size: 15pt;
+            width: 177px;
+        }
+        .auto-style11 {
+            text-align: center;
+            font-size: 25pt;
+            width: 177px;
+            height: 107px;
+        }
+        .auto-style12 {
+            height: 107px;
+            text-align: center;
+        }
+        .auto-style13 {
+            height: 107px;
+            width: 196px;
+            font-size: 25pt;
+            text-align: center;
+        }
+        .auto-style14 {
+            width: 196px;
+            height: 256px;
+        }
+        .auto-style15 {
+            height: 256px;
+            font-size: 15pt;
+            text-align: center;
+        }
+        .auto-style16 {
+            height: 256px;
+            font-size: 15pt;
+            width: 232px;
+            text-align: center;
+        }
+        .auto-style17 {
+            height: 107px;
+            width: 232px;
+            text-align: center;
+        }
+        .auto-style18 {
+            height: 107px;
+            width: 238px;
+            text-align: center;
+        }
+        .auto-style19 {
+            height: 256px;
+            font-size: 15pt;
+            width: 238px;
+            text-align: center;
+        }
+        .auto-style20 {
+            font-size: 25pt;
+        }
+        .auto-style21 {
+            height: 40px;
+            text-align: center;
+            font-size: 15pt;
+            width: 177px;
+        }
+        .auto-style22 {
+            width: 196px;
+            height: 40px;
+        }
+        .auto-style23 {
+            height: 40px;
+            font-size: 15pt;
+            width: 232px;
+            text-align: center;
+        }
+        .auto-style24 {
+            height: 40px;
+            font-size: 15pt;
+            width: 238px;
+            text-align: center;
+        }
+        .auto-style25 {
+            height: 40px;
+            font-size: 15pt;
+            text-align: center;
+        }
+        </style>--%>
+    <link href="~/css\b1.css" rel="stylesheet" type="text/css"/>
+    <link href="~/css/b1.css" rel="stylesheet" type="text/css" />
+   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Varela+Round" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+        .auto-style2 {
+            font-size: 15pt;
+            font-weight: bold;
+        }
+        .auto-style3 {
+            font-size: 11pt;
+        }
+        .auto-style4 {
+            color: #000080;
+        }
+        .auto-style5 {
+            font-size: 11pt;
+            color: #000080;
+        }
+    </style>
+
+    </head>
+<body>
+    
+   <div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			
+		&nbsp;
+		    <br />
+            <br />
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="30pt" ForeColor="White" Text="User's Activities"></asp:Label>
+            <br />
+            <br />
+            <form runat="server">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <div>
+               <asp:UpdatePanel ID="UpdatePanel1" runat="server" >
+                <ContentTemplate>
+                    <asp:AdRotator ID="AdRotator2" runat="server" AdvertisementFile="~/UserSlider.xml" />
+                    <asp:Timer ID="Timer2" runat="server" Interval="2500"></asp:Timer>
+                    </ContentTemplate>
+            </asp:UpdatePanel>
+                </div>
+               
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+		<div id="menu" class="container">
+			<ul>
+				<li class="current_page_item"><a href="../basic.aspx" accesskey="1" title="">Homepage</a></li>
+                <li><a href="ApplyForLoan.aspx" accesskey="1" title="">Apply for Loan</a></li>
+				<li><a href="Query.aspx" accesskey="1" title="">Query</a></li>
+				<li><a href="UpdateUser.aspx"accesskey="2" title="">Update Profile</a></li>
+				<li><a href="ViewProfile.aspx" accesskey="3" title="">View Profile</a></li>
+				<li><a href="StatusForm.aspx" accesskey="4" title="">Status</a></li>
+				<li><a href="../ContactUs.aspx" accesskey="5" title="">Contact Us</a></li>
+			</ul>
+		</div>
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+	    <asp:LinkButton ID="LinkBtnLogout" runat="server" Font-Bold="True" Font-Names="aprajita" Font-Size="Large" PostBackUrl="~/Login.aspx">Logout</asp:LinkButton>
+	</div>
+	<div id="page" class="container">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <p>
+                &nbsp;</p>
+            <p>
+                &nbsp;</p>
+        </asp:ContentPlaceHolder>
+	</div>
+	<div id="portfolio-wrapper">
+	 <footer style="height: 607px; width: 1090px; margin-bottom: 205px">
+                <br />
+         
+                <table class="auto-style8" cellspacing="20">
+                    <tr class="auto-style2">
+                        <td class="auto-style1">Personal <br />Loan                          Loan</td>
+                        <td class="auto-style1">Home
+                            <br />
+                            Loan</td>
+                        <td class="auto-style1"><br />
+                            <span class="auto-style20">Vehical </span>
+                            <br class="auto-style20" />
+                            <span class="auto-style20">Loan</span><br />
+                        </td>
+                        <td class="auto-style1"><span class="auto-style20">Education </span>
+                            <br class="auto-style20" />
+                            <span class="auto-style20">Loan</span></td>
+                        <td class="auto-style1"><span class="auto-style20">Business</span><br class="auto-style20" />
+                            <span class="auto-style20">Loan</span></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style1">Personal loans can be used
+                            <br />
+                            for many purposes. Pay off unexpected expenses, repair your home or vehicle or make a special purchase for less than using a credit card or payday loan would cost. Use a personal loan for debt consolidation.</td>
+                        <td class="auto-style14" style="text-align: center;">If you can afford an EMI with ease, its wise to invest in a property. A pays a rent for a property worth Rs 70,000,00. Whereas B has availed a home loan of Rs 50,000,00 for the same property. ... Likewise, the rent increases at the same rate.</td>
+                        <td class="auto-style1">While applying for a Car Loan may not be a particularly arduous task, you may need to think long and hard about prepaying or foreclosing your Car Loan. As strange as it may sound, not letting your Car Loan run its course may not be a very good idea even if you happen to have some extra funds on hand.</td>
+                        <td class="auto-style1">Taking an education loan helps you in building a good credit score as this is the first loan in a person&#39;s life. If you repay the loan on time without any defaults then it also makes easier for you to get home loan, car loan, etc., in future. (With Inputs from Sunil Dhawan) Click here to check out the education loan ...</td>
+                        <td class="auto-style1">Every business needs a certain amount of money to start. ... The first organization that he thinks of is his bank. Yes banks are almost always one of the first organizations to be approached for funds in the form of a loan.</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style1">
+                            <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Loans/Personal.aspx" CssClass="auto-style5">Find More..</asp:LinkButton>
+                        </td>
+                        <td class="auto-style3" style="text-align: center;">
+                            <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Loans/Home.aspx" CssClass="auto-style4">Find More..</asp:LinkButton>
+                        </td>
+                        <td class="auto-style1">
+                            <span class="auto-style3">
+                            <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Loans/Vehical.aspx" CssClass="auto-style4">Find More..</asp:LinkButton>
+                        </td>
+                        <td class="auto-style1">
+                            <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Loans/Educational.aspx" CssClass="auto-style4">Find More..</asp:LinkButton>
+                        </td>
+                        <td class="auto-style1">
+                            <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/Loans/Business.aspx" CssClass="auto-style4">Find More..</asp:LinkButton>
+                            </span>
+                        </td>
+                    </tr>
+                    </form>
+                </table>
+         <br />
+                <br />
+              </footer>
+      	
+</div>
+
+</body>
+</html>
